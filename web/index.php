@@ -46,7 +46,7 @@ function findActive($news){
 
 
 /**
- * Поиск новости по id
+ * Поиск новости по её id
  * @param array $news
  * @param $id
  * @return array|bool
