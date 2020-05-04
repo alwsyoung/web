@@ -3,7 +3,7 @@
         <h1>Фильмы</h1>
         <article v-for="film in films">
             <h4>{{film.title}}</h4>
-            <Comments :comments="film.comments"></Comments>
+            <Comments :film="film" :comments="film.comments"></Comments>
         </article>
     </div>
 </template>

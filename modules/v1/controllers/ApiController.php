@@ -29,15 +29,11 @@ class ApiController extends ActiveController
                 'class' => VerbFilter::class,
                 'actions' => $this->verbs(),
             ],
-            'authenticator' => [
-                'class' => CompositeAuth::class,
-            ],
             'rateLimiter' => [
                 'class' => RateLimiter::class,
             ],
-            'cors' => [
-                'class' => Cors::class,
-                'except' => ['options']
+            'corsFilter' => [
+                'class' => Cors::class
             ]
         ];
     }
